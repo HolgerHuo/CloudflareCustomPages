@@ -1,29 +1,11 @@
 <!doctype html>
-<!--沧水博客专用页面-->
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>5XX错误,源服务器无法连接</title>
-<script crossorigin="anonymous" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
-<SCRIPT type="text/javascript">        
-            var maxtime = 6; 
-            function CountDown() {
-                if (maxtime >= 0) {
-                    minutes = Math.floor(maxtime / 60);
-                    seconds = Math.floor(maxtime % 60);
-                    msg = "稍候 " + seconds + " 秒";
-                    
-                    if (maxtime == 0){msg = "即将进入！";}
-					document.all["timer"].innerHTML = msg;
-                        --maxtime;
-                } else{
-                    clearInterval(timer);
-                   
-                }
-            }
-            timer = setInterval("CountDown()", 1000);                
-</SCRIPT>
+<title>啊哦 服务器掉线了 500 Error Internal Server Error</title>
+<meta http-equiv="refresh" content="5;url=http://dragon-fly.club/">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <SCRIPT>
 //显示ip节点
 $(function() {
@@ -45,8 +27,8 @@ console.clear();
 console.log('%c访问即代表遵守本站Cookies! ','background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;');
 console.log('%c如有不适,请您直接关闭本页面. ','background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;');
  console.log('%c页面加载完毕消耗了'+Math.round(performance.now()*100)/100+'ms','background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;');
-console.log("%c「Maybe you are my God」", "background:black; color:white; font-size:25px");
-console.log("%c ", "background: url(https://ws4.sinaimg.cn/large/0076VEu5ly1g0889n445fj30dw08i74u.jpg) no-repeat center;padding-left:500px;padding-bottom: 364px;");
+console.log("%c「DragonFly.Club」", "background:black; color:white; font-size:25px");
+console.log("%c ", "background: url(https://i.holger.net.cn/static/images/avatar.png) no-repeat center;padding-left:50px;padding-bottom: 364px;width:50px;");
 </SCRIPT>
 <style>
 
@@ -154,10 +136,10 @@ html body h4 {
 <div style="display:none">
 ::CLOUDFLARE_ERROR_500S_BOX::
 </div>
-<a><img style="width: 200px;" src="https://ws2.sinaimg.cn/large/0076VEu5ly1g1jyxyowtlj30bk076tab.jpg" /></a>
+<a><img style="width: 50px;" src="https://i.holger.net.cn/static/images/avatar.png" /></a>
 <h1><div data-translate="checking_browser" id="timer"></div> </h1>
-<p data-translate="allow_5_secs" style="color: #E91E63;font-size: 15px;">源服务器发生5XX错误,您目前无法访问我们</p>	
-<p data-translate="process_is_automatic" style="color: #cc49e2;font-size: 15px;">事件编号：::RAY_ID::<br>您的IP::CLIENT_IP:: ::GEO::</p>
+<p data-translate="allow_5_secs" style="color: #E91E63;font-size: 15px;">服务器暂时走丢了～请您稍后再来 <br>The server is currently unavailable, please check again later.</p>	
+<p data-translate="process_is_automatic" style="color: #cc49e2;font-size: 15px;">事件编号 Ray ID：::RAY_ID::<br>您的IP IP Addr::CLIENT_IP:: ::GEO::</p>
 <h3 style="color: #adadad;" ><small id="result"></small></h3>
 <div class="scene">
   <svg 
@@ -170,7 +152,7 @@ html body h4 {
   viewBox="0 0 38 38" 
   preserveAspectRatio="xMinYMin meet"
   >
-  <text x="14" y="21" font-family="Monaco" font-size="2px" style="font-weight: 500;fill: #f77a70;" fill="grey" id="timer">请稍后刷新重试
+  <text x="14" y="21" font-family="Monaco" font-size="2px" style="font-weight: 500;fill: #f77a70;" fill="grey" id="timer">Redirecting
      <animate 
        attributeName="opacity"
        values="0;1;0" dur="1.8s"
